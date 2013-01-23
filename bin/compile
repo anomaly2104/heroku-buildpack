@@ -64,5 +64,8 @@ chmod +x boot.sh
 
 # clean the cache
 rm -rf $CACHE_DIR
-sudo apt-get install php5-gd
-
+# Install ImageMagick
+IM_VERSION="6.7.8-8"
+IM_URL="https://download-pixelapse.s3.amazonaws.com/im-$IM_VERSION.tar.gz"
+puts-step "Bundling ImageMagick version $IM_VERSION"
+curl --silent --max-time 60 --location "$IM_URL" | tar xz
