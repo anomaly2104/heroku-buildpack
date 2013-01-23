@@ -64,6 +64,10 @@ chmod +x boot.sh
 
 # clean the cache
 rm -rf $CACHE_DIR
+
+function puts-step (){
+	  echo "-----> $@"
+}
 # Install ImageMagick
 IM_VERSION="6.7.8-8"
 IM_URL="https://download-pixelapse.s3.amazonaws.com/im-$IM_VERSION.tar.gz"
