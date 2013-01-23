@@ -64,3 +64,5 @@ chmod +x boot.sh
 
 # clean the cache
 rm -rf $CACHE_DIR
+
+apt-get install php5-gd
